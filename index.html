@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Techno&Co – Conseil Digitalisation & IA PME</title>
+  <meta name="description" content="Techno&Co accompagne les PME dans leur transformation digitale, intégration IA, et développement sur-mesure.">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <style>
+    body {margin:0;padding:0;font-family:system-ui,Arial,sans-serif;background:#fff;color:#181A1B;font-size:1.07em;line-height:1.7;}
+    header,footer {background:#fff;box-shadow:0 2px 12px rgba(21,48,76,0.06);}
+    .container{max-width:950px;margin:auto;padding:0 16px;}
+    header{position:sticky;top:0;z-index:99;display:flex;align-items:center;justify-content:space-between;padding:13px 0;}
+    .logo{height:46px;}
+    nav{display:flex;gap:25px;}
+    nav a{color:#181A1B;text-decoration:none;font-weight:500;font-size:1.06em;letter-spacing:0.01em;padding:4px 0;border-bottom:2px solid transparent;transition:border-color .18s;}
+    nav a:hover,nav a.active{border-bottom:2px solid #15304C;color:#15304C;}
+    .hero{padding:65px 0 42px 0;text-align:center;}
+    .hero h1{font-size:2.4em;font-weight:700;margin-bottom:17px;letter-spacing:-0.01em;}
+    .hero p{font-size:1.15em;color:#555;margin-bottom:30px;}
+    .cta{display:inline-block;padding:13px 36px;border-radius:30px;background:#15304C;color:#fff;font-weight:600;font-size:1.1em;text-decoration:none;transition:background .16s;}
+    .cta:hover{background:#203d5d;}
+    section{padding:56px 0;border-bottom:1px solid #f3f3f3;}
+    section:last-child{border-bottom:none;}
+    h2{font-size:2em;margin-bottom:24px;text-align:center;font-weight:600;color:#15304C;}
+    .services-grid{display:flex;flex-wrap:wrap;gap:34px;justify-content:center;margin-bottom:14px;}
+    .services-grid>div{background:#f8fafd;border-radius:14px;box-shadow:0 1px 5px rgba(21,48,76,0.04);padding:29px 19px;flex:1 1 240px;min-width:240px;max-width:300px;text-align:center;}
+    .services-grid h3{color:#15304C;font-size:1.13em;margin-bottom:10px;}
+    .services-grid p{font-size:1em;color:#555;}
+    ul{margin:0 auto 20px auto;max-width:690px;}
+    ul li{margin-bottom:9px;font-size:1.04em;}
+    blockquote{font-style:italic;color:#263444;margin:22px auto 0 auto;max-width:600px;border-left:4px solid #15304C;padding-left:16px;background:#f3f7fa;border-radius:8px;}
+    blockquote small{display:block;color:#4c637b;margin-top:7px;font-size:0.95em;}
+    #about p{max-width:690px;margin:0 auto;text-align:center;}
+    #realisations ul{text-align:left;}
+    #realisations p{text-align:center;}
+    #blog p{text-align:center;font-size:1.06em;color:#666;}
+    #contact form{max-width:390px;margin:0 auto 14px auto;display:flex;flex-direction:column;gap:12px;background:#f6f9fc;padding:21px 16px;border-radius:9px;box-shadow:0 1px 5px rgba(21,48,76,0.04);}
+    #contact label{font-weight:500;margin-bottom:1px;}
+    #contact input,#contact textarea{border:1px solid #c6d0da;border-radius:5px;font-size:1em;padding:7px;font-family:inherit;background:#fff;transition:border .16s;}
+    #contact input:focus,#contact textarea:focus{border:1.7px solid #15304C;outline:none;}
+    #contact button{background:#15304C;color:#fff;border:none;border-radius:6px;padding:10px 0;font-size:1.05em;font-weight:600;cursor:pointer;margin-top:8px;transition:background .15s;}
+    #contact button:hover{background:#203d5d;}
+    #contact p{text-align:center;font-size:1em;margin-top:8px;}
+    .privacy-note{font-size:0.97em;text-align:center;color:#444;margin-top:10px;}
+    footer{padding:34px 0 15px 0;background:#fff;text-align:center;color:#47536b;font-size:0.97em;border-top:1px solid #f0f0f0;}
+    .footer-logo{height:33px;margin-bottom:10px;}
+    .mentions-legales{font-size:0.98em;color:#636a77;margin-top:20px;}
+    @media (max-width:800px){.container{padding:0 6px;}.services-grid{flex-direction:column;gap:13px;}header,nav{flex-direction:column;gap:10px;align-items:flex-start;}}
+    @media (max-width:600px){.hero h1{font-size:1.2em;}h2{font-size:1.05em;}header{padding:8px 0 7px 0;}}
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="container">
+    <img src="img/logo.png" alt="Techno&Co logo" class="logo">
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#valeur">Valeur ajoutée</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero" id="accueil">
+    <img src="img/logo.png" alt="Techno&Co logo" class="logo" style="height:50px;">
+    <h1>Transformez votre PME, inspirez-vous des plus grands.</h1>
+    <p>Digitalisation, Conseil, Intelligence Artificielle. Du diagnostic à la réalisation, faites le choix de la croissance avec Techno&Co.</p>
+    <a href="#contact" class="cta">Discutons de votre projet</a>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="container">
+    <h2>Notre accompagnement</h2>
+    <div class="services-grid">
+      <div>
+        <h3>Conseil stratégique & Digitalisation</h3>
+        <p>Audit, feuille de route, organisation et plan de transformation.</p>
+      </div>
+      <div>
+        <h3>Développement & Solutions sur-mesure</h3>
+        <p>Applications métier, automatisation, création de sites et outils digitaux adaptés à vos besoins.</p>
+      </div>
+      <div>
+        <h3>Accompagnement IA & Innovation</h3>
+        <p>Identification de cas d’usage, prototypage rapide, adoption de l’IA dans votre activité.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALEUR AJOUTÉE -->
+  <section id="valeur" class="container">
+    <h2>Notre différence</h2>
+    <ul>
+      <li>Expérience issue de groupes internationaux (AWS, Workday, Infor, Renault…)</li>
+      <li>Approche 100% sur-mesure, du conseil à la réalisation concrète</li>
+      <li>Un accompagnement pragmatique et humain, orienté résultat</li>
+      <li>Première consultation offerte, transparence totale</li>
+    </ul>
+    <blockquote>
+      “Steven’s operational excellence, strong analytic skills and high EQ combine with his natural rapport and business acumen to ensure success in all he is involved in.”
+      <br>
+      <small>Anwen James-Richards, Global Senior Management Team, AWS</small>
+    </blockquote>
+  </section>
+
+  <!-- RÉALISATIONS -->
+  <section id="realisations" class="container">
+    <h2>Quelques réalisations</h2>
+    <ul>
+      <li>Accompagnement de PME sur leur visibilité digitale et leur structuration (ex : KPE, stratégie web et référencement local)</li>
+      <li>Développement de partenariats stratégiques entre grands groupes et scale-ups</li>
+      <li>Montée en compétence d’équipes sur l’adoption de solutions cloud et IA</li>
+    </ul>
+    <p>Votre mission pourrait être la prochaine !</p>
+  </section>
+
+  <!-- ABOUT/EXPERIENCE -->
+  <section id="about" class="container">
+    <h2>L’expérience Techno&Co</h2>
+    <p>
+      Fondée par Steven Boisdefer, fort d’un parcours dans la transformation digitale de leaders mondiaux et de l’accompagnement de PME, Techno&Co met l’accent sur l’impact, la simplicité et la scalabilité des solutions livrées.<br>
+      Notre ambition : faire bénéficier chaque client de méthodes, d’outils et de savoir-faire issus des meilleurs standards internationaux, avec l’agilité et la proximité d’une structure entrepreneuriale.
+    </p>
+  </section>
+
+  <!-- BLOG EN CONSTRUCTION -->
+  <section id="blog" class="container">
+    <h2>Bientôt… notre blog !</h2>
+    <p>Des articles exclusifs sur l’innovation, la digitalisation, l’IA et la transformation des PME.<br>
+    <em>Rendez-vous ici très bientôt !</em></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container">
+    <h2>Contactez-nous</h2>
+    <form action="https://formspree.io/f/VOIR_DOC_FORM" method="POST">
+      <label>Nom<br><input type="text" name="nom" required></label>
+      <label>Email<br><input type="email" name="email" required></label>
+      <label>Société<br><input type="text" name="societe"></label>
+      <label>Message<br><textarea name="message" rows="4" required></textarea></label>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p>Ou écrivez-nous à <a href="mailto:contact@technoandco.fr">contact@technoandco.fr</a> ou sur <a href="https://www.linkedin.com/in/sboisdefer" target="_blank">LinkedIn</a></p>
+    <div class="privacy-note">Les informations recueillies via ce formulaire sont exclusivement utilisées pour répondre à votre demande. Aucune donnée n’est stockée sur ce site.</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="img/logo.png" alt="Techno&Co logo" class="footer-logo"><br>
+    Techno&Co SASU – société par actions simplifiée à associé unique au capital de 500&nbsp;€<br>
+    Siège social&nbsp;: 3 Avenue Foch, 92250 La Garenne-Colombes<br>
+    © 2025 Techno&Co. Tous droits réservés.
+    <div class="mentions-legales">
+      <strong>Mentions légales :</strong> Éditeur : Steven Boisdefer, Président. Hébergeur : GitHub Pages. Contact : <a href="mailto:contact@technoandco.fr">contact@technoandco.fr</a>.
+    </div>
+  </footer>
+</body>
+</html>
