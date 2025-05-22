@@ -11,13 +11,39 @@
     header,footer {background:#fff;box-shadow:0 2px 12px rgba(21,48,76,0.06);}
     .container{max-width:950px;margin:auto;padding:0 16px;}
     header{position:sticky;top:0;z-index:99;display:flex;align-items:center;justify-content:space-between;padding:13px 0;}
-    .logo{height:46px;}
+    .logo{height:70px;}
     nav{display:flex;gap:25px;}
     nav a{color:#181A1B;text-decoration:none;font-weight:500;font-size:1.06em;letter-spacing:0.01em;padding:4px 0;border-bottom:2px solid transparent;transition:border-color .18s;}
     nav a:hover,nav a.active{border-bottom:2px solid #15304C;color:#15304C;}
-    .hero{padding:65px 0 42px 0;text-align:center;}
-    .hero h1{font-size:2.4em;font-weight:700;margin-bottom:17px;letter-spacing:-0.01em;}
-    .hero p{font-size:1.15em;color:#555;margin-bottom:30px;}
+    /* HERO DESIGN */
+    .hero {
+      padding: 80px 0 48px 0;
+      text-align: center;
+      background: linear-gradient(90deg, #f7fafd 0%, #f2f6fa 100%);
+      border-bottom: 1px solid #e9ecef;
+    }
+    .hero-content {
+      display: inline-block;
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 38px 24px 40px 24px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 32px rgba(21,48,76,0.07);
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #15304C;
+      letter-spacing: -0.01em;
+    }
+    .hero-subtitle {
+      font-size: 1.18em;
+      color: #526079;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
     .cta{display:inline-block;padding:13px 36px;border-radius:30px;background:#15304C;color:#fff;font-weight:600;font-size:1.1em;text-decoration:none;transition:background .16s;}
     .cta:hover{background:#203d5d;}
     section{padding:56px 0;border-bottom:1px solid #f3f3f3;}
@@ -44,10 +70,16 @@
     #contact p{text-align:center;font-size:1em;margin-top:8px;}
     .privacy-note{font-size:0.97em;text-align:center;color:#444;margin-top:10px;}
     footer{padding:34px 0 15px 0;background:#fff;text-align:center;color:#47536b;font-size:0.97em;border-top:1px solid #f0f0f0;}
-    .footer-logo{height:33px;margin-bottom:10px;}
+    .footer-logo{height:56px;margin-bottom:14px;}
     .mentions-legales{font-size:0.98em;color:#636a77;margin-top:20px;}
     @media (max-width:800px){.container{padding:0 6px;}.services-grid{flex-direction:column;gap:13px;}header,nav{flex-direction:column;gap:10px;align-items:flex-start;}}
-    @media (max-width:600px){.hero h1{font-size:1.2em;}h2{font-size:1.05em;}header{padding:8px 0 7px 0;}}
+    @media (max-width:600px){
+      .logo {height:46px;}
+      .footer-logo {height:38px;}
+      .hero-content {padding: 18px 4vw 22px 4vw;}
+      .hero h1 {font-size: 1.25em;}
+      .hero-subtitle {font-size: 1em;}
+    }
   </style>
 </head>
 <body>
@@ -66,10 +98,15 @@
 
   <!-- HERO -->
   <div class="hero" id="accueil">
-    <img src="img/logo.png" alt="Techno&Co logo" class="logo" style="height:50px;">
-    <h1>Transformez votre PME, inspirez-vous des plus grands.</h1>
-    <p>Digitalisation, Conseil, Intelligence Artificielle. Du diagnostic à la réalisation, faites le choix de la croissance avec Techno&Co.</p>
-    <a href="#contact" class="cta">Discutons de votre projet</a>
+    <div class="hero-content">
+      <h1>Transformez votre PME, inspirez-vous des plus grands.</h1>
+      <p class="hero-subtitle">
+        Accélérez votre transformation digitale avec des solutions sur-mesure : <br>
+        conseil stratégique, digitalisation, intégration de l’IA.<br>
+        Un accompagnement à la hauteur de vos ambitions, du diagnostic à la réalisation.
+      </p>
+      <a href="#contact" class="cta">Discutons de votre projet</a>
+    </div>
   </div>
 
   <!-- SERVICES -->
